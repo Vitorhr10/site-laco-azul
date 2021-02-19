@@ -16,7 +16,9 @@ const Component = () => {
 
 5. Use constants to avoid repetition.
 
-6. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
+6. This is the Backend repo: https://github.com/Vitorhr10/laco-azul-api
+
+7. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
 
 ```javascript
 {
