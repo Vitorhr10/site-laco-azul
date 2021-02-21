@@ -1,13 +1,13 @@
 import React from "react"
 import Title from "./Title"
-import services from "../constants/services"
-const Services = () => {
+import companies from "../constants/companies"
+const Companies = () => {
   return (
     <section className="section bg-grey">
-      <Title title="services"/>
+      <Title title="a laço azul"/>
       <div className="section-center services-center">
-        {services.map((service)=>{
-          const { id, icon, title, text } = service
+        {companies.map((company)=>{
+          const { id, icon, title, text } = company
           return (
             <article key={id} className="service">
               {icon}
@@ -22,4 +22,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Companies
