@@ -11,7 +11,7 @@ export default [
     id: 2,
     icon: <FaEye className="service-icon" />,
     title: "visão",
-    text: `Ter uma comunidade ativa na transformação de sua realidade.`,
+    text: `Ter uma comunidade ativa na transformação de sua realidade. Ter uma comunidade ativa na transformação de sua realidade.`,
   },
   {
     id: 3,

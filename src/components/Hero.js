@@ -32,7 +32,7 @@ const Hero = () => {
           <h1>laço azul</h1>
           <h4>laço azul is a clinic</h4>
           <Link to="/contact" className="btn">
-            contact me
+            entrar em contato
           </Link>
           <SocialLinks />
         </div>

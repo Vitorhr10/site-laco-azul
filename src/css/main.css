@@ -182,8 +182,8 @@ p {
   margin-bottom: 4rem;
   text-align: center;
 }
-.bg-grey {
-  background: var(--clr-grey-10);
+.bg-white {
+  background: var(--clr-white);
 }
 /* page links */
 
@@ -483,44 +483,43 @@ Hero
 
 /*
 =============== 
-Services
+Companies
 ===============
 */
-.service {
-  background: var(--clr-white);
-  padding: 3rem 1.5rem;
+.company {
+  background: var(--clr-grey-10);
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.service-icon {
+.company-icon {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
 }
-.service .underline {
+.company .underline {
   width: 3rem;
   height: 0.12rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.service p {
+.company p {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.service:hover {
+.company:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-9);
 }
-.service:hover p {
+.company:hover p {
   color: var(--clr-primary-9);
 }
-.service:hover .underline {
+.company:hover .underline {
   background: var(--clr-primary-9);
 }
 @media screen and (min-width: 676px) {
-  .services-center {
+  .companies-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 2rem;
@@ -529,7 +528,7 @@ Services
   }
 }
 @media screen and (min-width: 992px) {
-  .services-center {
+  .companies-center {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -649,7 +648,7 @@ Projects
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
+  /* background: linear-gradient(to bottom right, var(--clr-primary-5), #222); */
   opacity: 0.85;
   transition: var(--transition);
 }
@@ -669,8 +668,8 @@ Projects
   margin-bottom: 0.75rem;
 }
 .project-info h3 {
-  font-weight: 500;
-  margin-bottom: 1.5rem;
+  font-weight: 800;
+  margin: 1.25rem 0 1.5rem 0;
   font-size: 1.5rem;
 }
 .project-desc {
@@ -732,7 +731,7 @@ Projects
     box-shadow: var(--dark-shadow);
 
     z-index: 1;
-    grid-column: 5 /12;
+    grid-column: 8 / 13;
     grid-row: 1 / 1;
   }
   .project:nth-of-type(even) .project-img {
@@ -740,7 +739,7 @@ Projects
     grid-row: 1 / 1;
   }
   .project:nth-of-type(even) .project-info {
-    grid-column: 2 / span 7;
+    grid-column: 1 / span 5;
     grid-row: 1 / 1;
     text-align: left;
   }
