@@ -625,23 +625,23 @@ Jobs
 
 /*
 =============== 
-Projects
+Services
 ===============
 */
-.projects {
+.services {
   background: var(--clr-grey-10);
 }
-.project {
+.service {
   display: grid;
   margin-bottom: 4rem;
 }
-.project-img {
+.service-img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   height: 19rem;
   z-index: 1;
 }
-.project-img::after {
+.service-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -652,34 +652,34 @@ Projects
   opacity: 0.85;
   transition: var(--transition);
 }
-.project:hover .project-img::after {
+.service:hover .service-img::after {
   opacity: 0;
 }
-.project-info {
+.service-info {
   background: var(--clr-white);
   padding: 1rem 2rem;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
-.project-number {
+.service-number {
   display: inline-block;
   font-size: 1.25rem;
   color: var(--clr-primary-5);
   margin-bottom: 0.75rem;
 }
-.project-info h3 {
+.service-info h3 {
   font-weight: 800;
   margin: 1.25rem 0 1.5rem 0;
   font-size: 1.5rem;
 }
-.project-desc {
+.service-desc {
   word-spacing: 15px;
   color: var(--clr-grey-3);
 }
-.project-stack {
+.service-stack {
   margin-bottom: 1rem;
 }
-.project-stack span,
+.service-stack span,
 .about-stack span {
   display: inline-block;
   background: var(--clr-grey-9);
@@ -694,31 +694,31 @@ Projects
 .about-stack span {
   margin-top: 0.5rem;
 }
-.project-icon {
+.service-icon {
   color: var(--clr-primary-5);
   font-size: 1.25rem;
   margin-right: 0.5rem;
   transition: var(--transition);
 }
-.project-icon:hover {
+.service-icon:hover {
   color: var(--clr-primary-1);
 }
 @media screen and (min-width: 576px) {
-  .project-img {
+  .service-img {
     height: 19rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .project-img {
+  .service-img {
     height: 22rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .project {
+  .service {
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
   }
-  .project-img {
+  .service-img {
     grid-column: 1 / span 8;
     /* grid-column-end: 8; */
     grid-row: 1 / 1;
@@ -726,7 +726,7 @@ Projects
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
   }
-  .project-info {
+  .service-info {
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
 
@@ -734,11 +734,11 @@ Projects
     grid-column: 8 / 13;
     grid-row: 1 / 1;
   }
-  .project:nth-of-type(even) .project-img {
+  .service:nth-of-type(even) .service-img {
     grid-column: 5 / -1;
     grid-row: 1 / 1;
   }
-  .project:nth-of-type(even) .project-info {
+  .service:nth-of-type(even) .service-info {
     grid-column: 1 / span 5;
     grid-row: 1 / 1;
     text-align: left;
@@ -856,7 +856,7 @@ Pages
 ===============
 */
 .blog-template,
-.projects-page,
+.services-page,
 .blog-page,
 .error-page,
 .about-page,

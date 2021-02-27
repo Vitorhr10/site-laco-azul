@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import Image from "gatsby-image"
 const Service = ({description,title,image,index}) => {
   return (
-    <article className="project">
+    <article className="service">
       <Image fluid={image.childImageSharp.fluid}
-      className="project-img" />
-      <div className="project-info">
+      className="service-img" />
+      <div className="service-info">
         <h3>{title}</h3>
-        <p className="project-desc">
+        <p className="service-desc">
           {description}
         </p>
       </div>
