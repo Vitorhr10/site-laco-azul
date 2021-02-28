@@ -6,13 +6,17 @@ import Company from "../components/Company"
 import Services from "../components/Services"
 import Blogs from "../components/Blogs"
 export default ({ data }) => {
-  const {allStrapiServices:{nodes:services}} = data
+  const {
+    allStrapiServices:{nodes:services},
+    allStrapiBlogs:{nodes:blogs}
+  } = data
 
   return (
     <Layout>
       <Hero />
       <Company />
       <Services services={services} title="principais serviços" showLink/>
+      <Blogs blogs={blogs} title="blog" showLink/>
     </Layout>
   )
 }
@@ -27,10 +31,28 @@ export const query = graphql`
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
-            }
           }
         }
       }
     }
   }
+  allStrapiBlogs(sort: {fields: date, order: DESC}, limit:3) {
+    nodes {
+      slug
+      content
+      desc
+      date(formatString: "MMMM Do, YYYY")
+      id
+      title
+      category
+      image {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  }
+}
 `
