@@ -30,14 +30,11 @@ const Hero = () => {
         <div>
           <div className="underline"></div>
           <h1>laço azul</h1>
-          <h4>laço azul is a clinic</h4>
           <Link to="/contact" className="btn">
             entrar em contato
           </Link>
-          <SocialLinks />
         </div>
       </article>
-      <Image fluid={fluid} className="hero-img" />
     </div>
   </header>
 }
