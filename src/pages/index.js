@@ -16,7 +16,7 @@ export default ({ data }) => {
       <Hero />
       <Company />
       <Services services={services} title="principais serviços" showLink/>
-      <Blogs blogs={blogs} title="blog" showLink/>
+      <Blogs blogs={blogs} title="últimas notícias" showLink/>
     </Layout>
   )
 }
