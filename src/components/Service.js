@@ -7,7 +7,7 @@ const Service = ({description,title,image,index}) => {
       <Image fluid={image.childImageSharp.fluid}
       className="service-img" />
       <div className="service-info">
-        <h3>{title}</h3>
+        <h3>{title || "default title"}</h3>
         <p className="service-desc">
           {description}
         </p>
@@ -16,6 +16,10 @@ const Service = ({description,title,image,index}) => {
   )
 }
 
-Service.propTypes = {}
+Service.propTypes = {
+  title:PropTypes.string.isRequired,
+  image:PropTypes.object.isRequired,
+  description:PropTypes.string.isRequired
+}
 
 export default Service
