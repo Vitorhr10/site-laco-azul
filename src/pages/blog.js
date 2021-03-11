@@ -7,7 +7,7 @@ const Blog = ({data:{allStrapiBlogs:{nodes:blogs}}}) => {
   return (
     <Layout>
       <section className="blog-page">
-        <Blogs blogs={blogs} title="blog" />
+        <Blogs blogs={blogs} title="notícias" />
       </section>
     </Layout>
   )
