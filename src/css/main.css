@@ -189,18 +189,22 @@ p {
 
 /* social links */
 .social-links {
-  margin-top: 2rem;
-  width: 15rem;
+  margin-top: 2rem; 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
+
 .social-link {
   font-size: 1.75rem;
   color: var(--clr-grey-1);
   transition: var(--transition);
 }
+
 .social-link:hover {
   color: var(--clr-primary-5);
+}
+.social-link:first-child {
+  padding-right: 1rem;
 }
 /*
 =============== 
