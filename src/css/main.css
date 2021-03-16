@@ -502,7 +502,10 @@ Companies
   transition: var(--transition);
 }
 .company-icon {
-  font-size: 2rem;
+  color: var(--clr-primary-5);
+  font-size: 2.5rem;
+  margin-right: 0.2rem;
+  transition: var(--transition);
 }
 .company .underline {
   width: 3rem;
@@ -516,6 +519,9 @@ Companies
 }
 .company:hover {
   background: var(--clr-primary-5);
+  color: var(--clr-primary-9);
+}
+.company-icon:hover {
   color: var(--clr-primary-9);
 }
 .company:hover p {
@@ -699,15 +705,6 @@ Services
 }
 .about-stack span {
   margin-top: 0.5rem;
-}
-.service-icon {
-  color: var(--clr-primary-5);
-  font-size: 1.25rem;
-  margin-right: 0.5rem;
-  transition: var(--transition);
-}
-.service-icon:hover {
-  color: var(--clr-primary-1);
 }
 @media screen and (min-width: 576px) {
   .service-img {
