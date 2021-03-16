@@ -7,7 +7,7 @@ const Blog = ({data:{allStrapiBlogs:{nodes:blogs}}}) => {
   return (
     <Layout>
       <section className="blog-page">
-        <Blogs blogs={blogs} title="notícias" />
+        <Blogs blogs={blogs} title="todas notícias" />
       </section>
     </Layout>
   )
@@ -23,7 +23,6 @@ export const query = graphql`
         date(formatString: "MMMM Do, YYYY")
         id
         title
-        category
         image {
           childImageSharp {
             fluid {

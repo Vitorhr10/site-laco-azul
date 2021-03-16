@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
+    title: "Laço Azul",
+    description: "A Laço Azul é uma clínica de reabilitação para autistas",
+    author: "@vitorrodrigues",
+    twitterUsername: "@vitorrodrigues",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://lacoazul.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,

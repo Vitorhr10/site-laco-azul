@@ -29,7 +29,7 @@ export const query = graphql`
       description
       image {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -44,7 +44,6 @@ export const query = graphql`
       date(formatString: "MMMM Do, YYYY")
       id
       title
-      category
       image {
         childImageSharp {
           fluid {
